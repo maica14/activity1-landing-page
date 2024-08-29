@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #7C93C3;
+            
+        }
+        nav{
+            width: 90%;
+            margin: auto;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;  
+        }
+        nav ul li{
+            margin:0 5px;
+        }
+        nav ul a{
+            text-decoration: none;
+            padding: 0.3rem 1.3rem;
+            font-size: 30px;
+            font-weight: bold;
+            color: #494234;
+            position: relative;
+            z-index: 1;
+        }
+        nav ul a::after{
+            content: "";
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0px;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color:#E1D7B7;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        nav ul a:hover:after{
+            width: 100%;
+        }
+        .h_container{
+            margin-top: 25px;
+            background-image: url(background.png);
+            width: 100%;
+            height: 110vh;
+        }
+        .button{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            background-color: #1E2A5E;
+            padding: 40px;
+        }
+        .button:hover {
+                background-color: #E1D7B7;
+        }
+        .action {
+            position: absolute;
+            top: 110%;
+            left: 45%;
+            text-align: center;
+            }
+        .webdev {
+            font-size: 40px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .a_container{
+            margin-top: 30px;
+            padding: 50px;
+            background-color: #1E2A5E;
+        }
+
+        .definition {
+            display: flex; 
+            flex-wrap: wrap; 
+        }
+
+        p {
+            margin-left: 80px;
+            margin-right: 20px;
+            flex: 1;
+            font-size: 40px;
+        }
+
+        .img {
+            width: 30%;
+            height: auto; 
+            float: right; 
+            margin-right: 70px;
+            margin-top: 30px;
+        }
+        .button2{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            background-color: #7C93C3;
+            padding: 30px;
+        }
+        .button2:hover {
+                background-color: #E1D7B7;
+        }
+        .action2 {
+            position: absolute;
+            top: 203%;
+            left: 45%;
+            text-align: center;
+            }
+
+        .e_container{
+            margin-top: 70px;
+        }
+
+        .importance{
+            font-size: 30px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button3{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            background-color: #1E2A5E;
+            padding: 40px;
+        }
+        .button3:hover {
+                background-color: #E1D7B7;
+        }
+        .action3 {
+            position: absolute;
+            top: 280%;
+            left: 44%;
+            text-align: center;
+            }
+        .more_container{
+            margin-top: 250px;
+            background-image: url(pic.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+        .more_container {
+            position: relative; 
+        }
+
+        .ask {
+            position: absolute; 
+            top: 55%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            font-size: 80px;
+            color:black;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .more_container img {
+            width: 100%; 
+            height: 100vh; 
+            object-fit: cover;
+        }
+        .button4{
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+            
+        }
+        .button4:hover {
+                background-color: #E1D7B7;
+        }
+        .action4 {
+            position: absolute;
+            top: 70%;
+            left: 44%;
+            text-align: center;
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#EXPLORE">EXPLORE</a></li>
+                <li><a href="#MORE">MORE</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="h_container" id="HOME">
+        <div class="action">
+            <a  class="button" href="#ABOUT">NEXT</a>
+        </div>
+
+    </div>
+    <div class="a_container" id="ABOUT">
+            <h1 class="webdev">WEB DEVELOPMENT</h1>
+        <div class="definition">
+            <p>Web development is a complex process that involves creating, designing, and maintaining websites and web applications. 
+                <br>It encompasses various tasks such as planning, designing, coding, testing, and deployment. From understanding the client's 
+                <br>needs to ensuring a seamless user experience, web developers play a crucial role in bringing digital ideas to life. They 
+                <br>utilize a combination of technical skills, creativity, and problem-solving abilities to build functional, visually appealing, 
+                <br>and user-friendly websites that meet the evolving demands of the digital age.</p>
+            <img src="pic1.png" class="img" alt="PICTURE">
+        </div>
+        <div class="action2">
+            <a href="#EXPLORE" class="button2">EXPLORE</a>
+        </div>
+    </div>
+    <div class="e_container" id="EXPLORE">
+        <h1 class="importance">IMPROTANCE OF WEB DEVELOPMENT</h1>
+        <div class="explain">
+            <p>Web development is a crucial component of the modern digital landscape. It empowers businesses to reach a global audience, establish a strong brand identity, and generate revenue through e-commerce. 
+                Additionally, websites serve as valuable platforms for education, information dissemination, and communication.
+                Furthermore, web development plays a vital role in promoting accessibility and inclusivity. 
+                By ensuring that websites are designed to be usable by people with disabilities, businesses can demonstrate their commitment to social responsibility and broaden their customer base. 
+                Moreover, web development drives innovation and economic growth by enabling the creation of new products, services, and business models.</p>
+        </div>
+        <div class="action3">
+            <a href="#MORE" class="button3">LEARN MORE</a>
+        </div>
+    </div>
+    <div class="more_container" id="MORE">
+        <h1 class="ask">Want to learn more?</h1>
+        <div class="action4">
+            <a href="https://www.w3schools.com/" class="button4">Click Here!</a>
+        </div>
+    </div>
+    <script>
+        const nextButton = document.getElementById('HOME');
+        const exploreButton = document.getElementById('ABOUT');
+        const learnMoreButton = document.getElementById('EXPLORE');
+        const clickHereButton = document.getElementById('MORE');
+      
+
+        nextButton.addEventListener('click', function() {
+          nextButton.classList.add('animate-button');
+          window.location.href = '#ABOUT';
+        });
+      
+        exploreButton.addEventListener('click', function() {
+          exploreButton.classList.add('animate-button');
+          window.location.href = '#EXPLORE';
+        });
+      
+        learnMoreButton.addEventListener('click', function() {
+          learnMoreButton.classList.add('animate-button');
+          window.location.href = '#MORE';
+        });
+      
+        
+        clickHereButton.addEventListener('click', function() {
+          clickHereButton.classList.add('animate-button');
+        });
+        
+      </script>
+</body>
+</html>
